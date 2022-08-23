@@ -1,0 +1,342 @@
+/*estilos gerais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+.title{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/*header*/
+
+header{
+    /*background-color: #008037;*/
+    background-image: url('../images/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 1px 1px 8px 0.2px black;
+}
+
+header > .container{
+    max-width: 100%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.logo h2{
+    width: 300px;
+    display: block;
+    color: white;
+    float: left;
+    margin-top: 30px;
+}
+
+.logo img{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.desktop{
+    display: block;
+    float: right;
+}
+
+.desktop ul{
+    list-style-type: none;
+}
+
+.desktop ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 34px;
+}
+
+.desktop ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-2{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+}
+
+.desktop-2 i{
+    color: white;
+    margin-right: 5px;
+}
+
+.desktop-2 input{
+    width: 300px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*BG*/
+
+section.bg > .container{max-width: 100%;padding: 0;}
+.bg-wrapper{width: 100%;height: 80vh;}
+.bg-wrapper > a{
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin-top: -80px;
+    font-size: 50px;
+}
+
+.overlay{
+    opacity: 1;
+    background-color: black;
+    height: 100%;
+    z-index: 999;
+}
+
+.bg-img{
+    position: relative;
+    opacity: 0.8;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-text{position: absolute;top: 60%;left: 10%;color: white;text-shadow: 0 0 40px #323232;}
+
+.bg-text h2{
+    font-size: 30px;
+    margin-bottom: -2px;
+}
+
+.bg-text p{
+    font-size: 20px;
+}
+
+.bg-text form input[type=email]{
+    border: 1px solid black;
+    outline: 0;
+    border-radius: 20px;
+    padding: 3px 8px;
+}
+
+.bg-text form input[type=submit]{
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 3px 14px;
+    color: #008037;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+section.dots{
+    height: 60vh;
+    /*background-color: #008037;*/
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dots-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.dots-single{
+    z-index: 9999;
+    width: 33.3%;
+    height: 280px;
+    margin-top: -50px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 4px 20px 0.2px black;
+    padding: 30px;
+}
+
+.dots-single i{
+    font-size: 40px;
+    color: #008037;
+    font-weight: 700;
+}
+
+.dots-single h5{
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.dots-single p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.dots-single button{
+    padding: 2px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.dots-single button a{
+    padding: 15px;
+    color: #008037;
+    font-weight: 600;
+}
+
+.dots-bottom{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dots-bottom-text{
+    color: white;
+}
+
+.dots-bottom-text h2{
+    text-shadow: 0px 3px 10px #000000;
+    margin-bottom: 12px;
+}
+
+.dots-bottom-text button{
+    padding: 2px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.dots-bottom-text button a{
+    padding: 15px;
+    color: #008037;
+    font-weight: 600;
+}
+
+/*sobre*/
+
+section.sobre{
+    height: 80%;
+    padding: 50px;
+}
+
+.sobre-text button{
+    padding: 2px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.sobre-text button a{
+    padding: 15px;
+    color: #008037;
+    font-weight: 600;
+}
+
+.sobre-img{
+    text-align: center;
+    height: 400px;
+}
+
+.sobre-img img{
+    height: 100%;
+}
+/*produtos*/
+
+section.produtos{
+    padding: 50px;
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+.produtos .title{
+    color: white;
+}
+
+.produtos-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.produtos-single{
+    padding: 10px;
+    width: 25%;
+}
+
+.produtos-text{
+    text-align: center;
+    color: white;
+}
+
+.produtos-text img{
+    border: 8px solid rgba(50, 50, 50, 0.06);
+    width: 100%;
+}
+
+.produtos-text button{
+    padding: 2px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+    
+.produtos-text button a{
+    padding: 15px;
+    color: #008037;
+    font-weight: 600;
+}
+
+.produtos-bottom{
+    padding: 70px 0px 0px 0px;
+    text-align: center;
+}
+
+.produtos-bottom h2{
+    color: white;
+    text-shadow: 0px 3px 10px #000000;
+    margin-bottom: 12px;
+}
+
+.produtos-bottom button{
+    padding: 2px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.produtos-bottom button a{
+    padding: 15px;
+    color: #008037;
+    font-weight: 600;
+}
