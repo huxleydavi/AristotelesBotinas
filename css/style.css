@@ -59,9 +59,10 @@ header > .container{
 }
 
 .logo img{
+    margin-top: 25px;
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 /*desktop*/
@@ -78,7 +79,7 @@ header > .container{
 .desktop ul li{
     display: inline-block;
     margin-left: 20px;
-    margin-top: 34px;
+    margin-top: 38px;
 }
 
 .desktop ul li a{
@@ -87,6 +88,7 @@ header > .container{
 }
 
 .desktop-2{
+    display: none;
     position: absolute;
     top: 35%;
     left: 32%;
@@ -117,8 +119,8 @@ header > .container{
 	z-index: 1;
 	position: absolute;
 	left: 0;
-	top: 4.1rem;
-	border-top:2px solid black;
+	top: 6rem;
+	border-top:2px solid #005525;
 	background: white;
 	width: 100%;
 	list-style-type: none;
@@ -128,25 +130,19 @@ header > .container{
 	text-align: center;
 	width: 100%;
 	display: inline-block;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #008037;
 	padding: 6.4px;
-	transition: all 0.3s;
 }
 
 .mobile a{
 	font-family: var(--font-primary);
-	color: black;
+	color: #008037;
 	padding: 8px 20px;
 	text-decoration: none;
-	transition: all 0.3s;
-}
-
-.mobile a:hover{
-    font-size: 1.12rem;
 }
 
 .mobile > i{
-    margin-top: 20px;
+    margin-top: 35px;
 	cursor: pointer;
 	font-size: 2rem;
 	color: white;
@@ -224,6 +220,7 @@ section.dots{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .dots-single{
@@ -231,7 +228,6 @@ section.dots{
     width: 33.3%;
     height: 280px;
     margin-top: -50px;
-    margin-right: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 4px 20px 0.2px black;
@@ -457,7 +453,6 @@ section.contato{
     width: 30%;
 }
 
-
 .sociais a{
     color: #008037;
 }
@@ -491,6 +486,10 @@ footer > .container{
     padding: 50px;
 }
 
+.footer-single{
+    width: 33.3%;
+}
+
 .footer-single a{
     color: white;
 }
@@ -503,4 +502,66 @@ footer > .container{
     background-image: url('../images/footer.jpg');
     background-size: cover;
     /*background-color: #006e30;*/
+}
+
+@media screen and (max-width: 768px){
+    .logo h2{display: none;}
+    .logo img{display: block;}
+    .desktop{display: none;}
+    .desktop-2{display: none;}
+    .mobile{display: block;}
+    section.dots{
+        min-height: 150%;
+    }
+    .dots-single{
+        margin-right: 0px;
+        margin-top: -50px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .dots-bottom{
+        text-align: center;
+        margin-top: -20px;
+    }
+    section.sobre{
+        padding: 50px;
+        padding-top: 140px;
+    }
+    .sobre-img{
+        display: none;
+    }
+    .produtos-single{
+        width: 100%;
+    }
+    section.contato{
+        min-height: 100%;
+    }
+    .contato-wrapper{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .contato-wrapper form{
+        width: 100%;
+    }
+    .contato-wrapper form input{
+        width: 100%;
+    }
+    .contato-wrapper form textarea{
+        width: 100%;
+    }
+    .sociais{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .sociais h2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-single{
+        width: 100%;
+        margin: 15px 0;
+    }
 }
