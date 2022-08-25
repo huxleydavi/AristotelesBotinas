@@ -1,4 +1,5 @@
-//--------------------------By HS Corp-------------------------------//
-//---------------------------@hs.corp-------------------------------//
-//-----------------------hscorpp@gmail.com-------------------------------//
-/*Menu mobile*/$('.mobile > i').click(function(){$(this).parent().find('ul').slideToggle();});
+//Menu mobile
+
+$('.mobile > i').click(function(){
+	$(this).parent().find('ul').slideToggle();
+});
