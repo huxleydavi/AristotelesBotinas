@@ -1,3 +1,4 @@
-$('.mobile > i').click(function(){
-	$(this).parent().find('ul').slideToggle();
-});
+//--------------------------By HS Corp-------------------------------//
+//---------------------------@hs.corp-------------------------------//
+//-----------------------hscorpp@gmail.com-------------------------------//
+$('.mobile > i').click(function(){$(this).parent().find('ul').slideToggle();});
