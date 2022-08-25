@@ -436,7 +436,7 @@ section.contato{
     color: #008037;
     font-weight: 600;
     border-radius: 20px;
-    border: 1.7px solid black;
+    border: 1px solid black;
     cursor: pointer;
     text-decoration: underline;
 }
