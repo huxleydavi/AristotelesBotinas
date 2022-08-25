@@ -416,7 +416,7 @@ section.contato{
 }
 
 .contato-wrapper form input{
-    margin: 10px;
+    margin: 10px 0px;
     padding: 8px;
     width: 80%;
 }
@@ -425,7 +425,7 @@ section.contato{
     width: 80%;
     height: 100px;
     resize: none;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 8px;
 }
 
