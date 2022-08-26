@@ -1,0 +1,308 @@
+/*estilos gerais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+.title{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/*header*/
+
+header{
+    /*background-color: #008037;*/
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 1px 1px 8px 0.2px black;
+}
+
+header > .container{
+    max-width: 100%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.logo h2{
+    width: 300px;
+    display: block;
+    color: white;
+    float: left;
+    margin-top: 30px;
+}
+
+.logo img{
+    margin-top: 25px;
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+/*desktop*/
+
+.desktop{
+    display: block;
+    float: right;
+}
+
+.desktop ul{
+    list-style-type: none;
+}
+
+.desktop ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 38px;
+}
+
+.desktop ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-2{
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+}
+
+.desktop-2 i{
+    color: white;
+    margin-right: 5px;
+}
+
+.desktop-2 input{
+    width: 300px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*mobile*/
+
+.mobile{
+	float: right;
+	display: none;
+}
+
+.mobile ul{
+	display: none;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 6rem;
+	border-top:2px solid #005525;
+	background: white;
+	width: 100%;
+	list-style-type: none;
+}
+
+.mobile ul li{
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #008037;
+	padding: 6.4px;
+}
+
+.mobile a{
+	font-family: var(--font-primary);
+	color: #008037;
+	padding: 8px 20px;
+	text-decoration: none;
+}
+
+.mobile > i{
+    margin-top: 35px;
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+}
+
+/*contato*/
+
+section.contato{
+    height: 80%;
+    min-height: 80%;
+    padding: 50px;
+    position: relative;
+}
+
+.contato-wrapper{
+    width: 80%;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.contato-wrapper form{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.contato-wrapper form input{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 8px;
+    width: 80%;
+}
+
+.contato-wrapper form textarea{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    height: 100px;
+    resize: none;
+    margin: 10px 0px;
+    padding: 8px;
+}
+
+.contato-wrapper form input[type=submit]{
+    width: 30%;
+    height: 30px;
+    padding: 5px 17px;
+    color: #008037;
+    font-weight: 600;
+    border-radius: 20px; 
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sociais{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sociais h2{
+    width: 30%;
+}
+
+.sociais a{
+    color: #008037;
+}
+
+.sociais a i{
+    padding: 0px 40px;
+    font-size: 50px;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+}
+
+footer > .container{
+    max-width: 100%;
+    padding: 0;
+}
+
+.footer-wrapper{
+    width: 100%;
+    /*background-color: #008037;*/
+    background-image: url('../images/footer2.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
+}
+
+.footer-single{
+    width: 33.3%;
+}
+
+.footer-single a{
+    color: white;
+}
+
+.footer-wrapper-2{
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-image: url('../images/footer.jpg');
+    background-size: cover;
+    /*background-color: #006e30;*/
+}
+
+@media screen and (max-width: 768px){
+    header{padding: 0px 25px;}
+    .logo h2{display: none;}
+    .logo img{display: block;}
+    .desktop{display: none;}
+    .desktop-2{display: none;}
+    .mobile{display: block;}
+    section.contato{
+        min-height: 100%;
+    }
+    .contato-wrapper{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .contato-wrapper form{
+        width: 100%;
+    }
+    .contato-wrapper form input{
+        width: 100%;
+    }
+    .contato-wrapper form textarea{
+        width: 100%;
+    }
+    .sociais{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .sociais h2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-single{
+        width: 100%;
+        margin: 15px 0;
+    }
+}
