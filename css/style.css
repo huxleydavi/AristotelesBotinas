@@ -293,7 +293,6 @@ section.dots{
 
 section.sobre{
     min-height: 80%;
-    height: 80%;
     padding: 50px;
 }
 
@@ -392,8 +391,7 @@ section.produtos{
 /*contato*/
 
 section.contato{
-    height: 80%;
-    min-height: 80%;
+    min-height: 80vh;
     padding: 50px;
     position: relative;
 }
@@ -516,12 +514,10 @@ footer > .container{
     .desktop-2{display: none;}
     .mobile{display: block;}
     section.dots{
-        min-height: 180%;
-        padding: 0px 50px 50px 50px;
+        min-height: 100vh;
+        padding-bottom: 50px;
     }
     .dots-single{
-        margin-right: 0px;
-        margin-top: -50px;
         width: 100%;
         margin-bottom: 100px;
     }
@@ -530,8 +526,7 @@ footer > .container{
         margin-top: -20px;
     }
     section.sobre{
-        padding: 50px;
-        padding-top: 100px;
+        min-height: 50%;
     }
     .sobre-img{
         display: none;
@@ -540,10 +535,11 @@ footer > .container{
         width: 100%;
     }
     section.contato{
-        min-height: 100%;
+        min-height: 85bh;
+        margin: 30px 0px;
     }
     .contato-wrapper{
-        margin-top: 40px;
+        margin-top: 20px;
         width: 100%;
     }
     .contato-wrapper form{
@@ -556,11 +552,16 @@ footer > .container{
         width: 100%;
     }
     .sociais{
+        margin: 0px;
         width: 100%;
         display: inline-block;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .sociais a i{
+        padding: 15px 20px;
+        font-size: 40px;
     }
     .sociais h2{
         width: 100%;
@@ -569,7 +570,4 @@ footer > .container{
         width: 100%;
         margin: 15px 0;
     }
-}
-
-@media screen and (max-width: 500px){section.contato{min-height: 80vh;}.contato-wrapper{margin-top: 10px;}
 }
