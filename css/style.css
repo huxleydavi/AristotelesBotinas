@@ -444,7 +444,7 @@ section.contato{
 }
 
 .sociais{
-    margin: 50px 0px;
+    padding: 50px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -535,11 +535,11 @@ footer > .container{
         width: 100%;
     }
     section.contato{
-        min-height: 85bh;
-        margin: 30px 0px;
+        min-height: 100vh;
+        margin: 0px;
     }
     .contato-wrapper{
-        margin-top: 20px;
+        padding-top: 30px;
         width: 100%;
     }
     .contato-wrapper form{
@@ -552,15 +552,15 @@ footer > .container{
         width: 100%;
     }
     .sociais{
-        margin: 0px;
+        padding: 30px 0px 50px 0px;
         width: 100%;
-        display: inline-block;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
     .sociais a i{
-        padding: 15px 20px;
+        padding: 10px 20px;
         font-size: 40px;
     }
     .sociais h2{
