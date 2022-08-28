@@ -333,4 +333,8 @@ footer > .container{
         width: 100%;
         margin: 15px 0;
     }
+    .prod-big-image img{
+        width: 95%;
+        height: 450px;
+    }
 }

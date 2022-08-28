@@ -391,7 +391,8 @@ section.produtos{
 /*contato*/
 
 section.contato{
-    min-height: 80vh;
+    height: 80%;
+    min-height: 80%;
     padding: 50px;
     position: relative;
 }
@@ -535,11 +536,12 @@ footer > .container{
         width: 100%;
     }
     section.contato{
-        min-height: 100vh;
-        margin: 0px;
+        height: 100%;
+        min-height: 100%;
+        position: relative;
     }
     .contato-wrapper{
-        padding-top: 30px;
+        height: 100%;
         width: 100%;
     }
     .contato-wrapper form{
@@ -552,7 +554,6 @@ footer > .container{
         width: 100%;
     }
     .sociais{
-        padding: 30px 0px 50px 0px;
         width: 100%;
         display: flex;
         justify-content: center;
