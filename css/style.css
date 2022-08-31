@@ -32,12 +32,12 @@ body,html{
 /*header*/
 
 header{
-    /*background-color: #008037;*/
-    background-image: url('../images/bg4.jpg');
+    background-color: #1c884b;
+    /*background-image: url('../images/bg4.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     position: relative;
-    box-shadow: 1px 1px 8px 0.2px black;
+    /*box-shadow: 1px 1px 8px 0.2px black;*/
 }
 
 header > .container{
@@ -209,10 +209,10 @@ section.bg > .container{max-width: 100%;padding: 0;}
 
 section.dots{
     min-height: 60vh;
-    /*background-color: #008037;*/
-    background-image: url('../images/bg4.jpg');
+    background-color: #1c884b;
+    /*background-image: url('../images/bg4.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
 }
 
 .dots-wrapper{
@@ -320,9 +320,10 @@ section.sobre{
 
 section.produtos{
     padding: 50px;
-    background-image: url('../images/bg4.jpg');
+    background-color: #1c884b;
+    /*background-image: url('../images/bg4.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
     min-height: 100%;
 }
 
@@ -478,9 +479,10 @@ footer > .container{
 
 .footer-wrapper{
     width: 100%;
-    /*background-color: #008037;*/
-    background-image: url('../images/footer2.jpg');
+    background-color: #186b3c;
+    /*background-image: url('../images/bg4.jpg');
     background-size: cover;
+    background-position: center;*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -502,9 +504,9 @@ footer > .container{
     text-align: center;
     color: white;
     font-size: 15px;
-    background-image: url('../images/footer.jpg');
-    background-size: cover;
-    /*background-color: #006e30;*/
+    /*background-image: url('../images/footer.jpg');
+    background-size: cover;*/
+    background-color: #116435;
 }
 
 @media screen and (max-width: 768px){

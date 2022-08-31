@@ -32,10 +32,7 @@ body,html{
 /*header*/
 
 header{
-    /*background-color: #008037;*/
-    background-image: url('../images/bg4.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #1c884b;
     position: relative;
     box-shadow: 1px 1px 8px 0.2px black;
 }
@@ -293,9 +290,7 @@ footer > .container{
 
 .footer-wrapper{
     width: 100%;
-    /*background-color: #008037;*/
-    background-image: url('../images/footer2.jpg');
-    background-size: cover;
+    background-color: #186b3c;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -317,9 +312,7 @@ footer > .container{
     text-align: center;
     color: white;
     font-size: 15px;
-    background-image: url('../images/footer.jpg');
-    background-size: cover;
-    /*background-color: #006e30;*/
+    background-color: #116435;
 }
 
 @media screen and (max-width: 768px){
