@@ -34,7 +34,6 @@ body,html{
 header{
     background-color: #1c884b;
     position: relative;
-    box-shadow: 1px 1px 8px 0.2px black;
 }
 
 header > .container{
